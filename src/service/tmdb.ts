@@ -22,9 +22,7 @@ export function useTmdbQuery() {
       refreshInterval: 60000,  // Intervalo de deduplicação de 60 segundos
     });
 
-    const total = Number(data?.total_pages);
-    const pageCount = Math.ceil(total / 20);
-    console.log(data)
+ 
     return { data, error, isLoading, mutate };
   }
 
