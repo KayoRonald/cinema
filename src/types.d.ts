@@ -12,6 +12,11 @@ export interface IMovie {
   backdrop_path: string
 }
 
+export interface IGenre {
+  id: number;
+  name: string;
+}
+
 export interface DeatilProps {
   id: number;
   title: string;
@@ -21,7 +26,7 @@ export interface DeatilProps {
   poster_path: string;
   vote_average: number;
   vote_count: number;
-  // genres: IGenre[];
+  genres: IGenre[];
   release_date: string;
   runtime: number;
   // credits: {
